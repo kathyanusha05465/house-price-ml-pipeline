@@ -23,3 +23,16 @@ Predicts house price per unit area using **Linear Regression, Random Forest, KNN
 - Random Forest + KNN implementation & tuning
 - Evaluation (RMSE, MAE, MAPE) and result communication
 
+## 🧠 Model Performance
+
+| **Model** | **ME ($)** | **RMSE ($)** | **MAE ($)** | **MPE (%)** | **MAPE (%)** | **Notes** |
+|------------|------------|--------------|--------------|--------------|--------------|------------|
+| Linear Regression | 1.2256 | 7.6140 | 5.8800 | -1.4676 | 16.5966 | Baseline model |
+| **Random Forest** | **0.2008** | **5.7360** | **4.4204** | **-2.8545** | **12.9027** | ✅ Best performance |
+| KNN | 0.7322 | 6.9516 | 5.5362 | -3.0110 | 16.2728 | Tuned with GridSearchCV |
+| Decision Tree | -3.7591 | 7.5989 | 5.6497 | -10.0000 | 10.0000 | PandasAI-generated |
+
+**Summary:**  
+Among all models tested, the **Random Forest Regressor** achieved the best performance with the lowest RMSE (5.736) and MAE (4.4204), indicating higher accuracy and robustness against outliers. Linear Regression and KNN performed reasonably well, while the Decision Tree model (PandasAI-based) showed slightly higher variability in predictions.
+
+
