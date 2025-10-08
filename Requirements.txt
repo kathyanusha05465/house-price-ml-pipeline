@@ -12,4 +12,6 @@ pandasai
 # Notebook utilities
 ipython
 jupyter
+google-colab
+
 
