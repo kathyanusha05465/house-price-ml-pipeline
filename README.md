@@ -7,12 +7,12 @@ Includes both **manual preprocessing** and **AI-assisted workflows (PandasAI)** 
 
 ## 📌 Key Highlights
 
-- 🧹 **Preprocessing:** outlier removal, value capping, normalization, feature prep  
-- ⚙️ **Models:** Linear Regression, Random Forest, KNN, Decision Tree  
-- 🧪 **Tuning:** GridSearchCV for RF & KNN  
-- 📊 **Metrics:** RMSE, MAE, MAPE, MPE  
-- 🤖 **AI Assist:** PandasAI used for assisted data prep / interpretation  
-- 🏆 **Best Model:** Random Forest (lowest RMSE & MAE)
+-  **Preprocessing:** outlier removal, value capping, normalization, feature prep  
+-  **Models:** Linear Regression, Random Forest, KNN, Decision Tree  
+-  **Tuning:** GridSearchCV for RF & KNN  
+-  **Metrics:** RMSE, MAE, MAPE, MPE  
+-  **AI Assist:** PandasAI used for assisted data prep / interpretation  
+-  **Best Model:** Random Forest (lowest RMSE & MAE)
 
 ---
 
