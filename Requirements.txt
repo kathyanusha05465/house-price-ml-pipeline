@@ -1,1 +1,15 @@
+# Core data stack
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+dmba
+
+# PandasAI (LLM-assisted data exploration)
+pandasai
+
+# Notebook utilities
+ipython
+jupyter
 
