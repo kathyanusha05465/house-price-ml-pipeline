@@ -35,6 +35,15 @@ Predicts house price per unit area using **Linear Regression, Random Forest, KNN
 **Summary:**  
 Among all models tested, the **Random Forest Regressor** achieved the best performance with the lowest RMSE (5.736) and MAE (4.4204), indicating higher accuracy and robustness against outliers. Linear Regression and KNN performed reasonably well, while the Decision Tree model (PandasAI-based) showed slightly higher variability in predictions.
 
+## ⚙️ How to Run
+
+Follow these steps to reproduce the results or explore the notebook:
+
+1. **Clone this repository** (download the project)
+   ```bash
+   git clone https://github.com/kathyanusha05465/house-price-ml-pipeline.git
+   cd house-price-ml-pipeline
+
 ## 💡 Demo
 For full exploration:
 - Open `01_data_cleaning_and_models.ipynb` → for manual pipeline
