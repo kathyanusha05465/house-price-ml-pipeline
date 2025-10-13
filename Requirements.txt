@@ -1,17 +1,21 @@
-# Core data stack
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
+# Core
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.4.2
+matplotlib==3.8.4
+seaborn==0.13.2
 dmba
 
-# PandasAI (LLM-assisted data exploration)
-pandasai
+# PandasAI workflow (pin to version you tested)
+pandasai==2.2.5
+
+# Optional for tree plotting in the README (if used)
+graphviz==0.20.3
 
 # Notebook utilities
 ipython
 jupyter
 google-colab
+
 
 
