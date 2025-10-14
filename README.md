@@ -108,9 +108,9 @@ jupyter notebook Notebooks/01_data_cleaning_and_models.ipynb
 **Kathy Anusha Felix**  
 🎓 Data Analyst & ML Enthusiast  
 📍 Humber College, Toronto, Canada  
-🔗 [LinkedIn](https://www.linkedin.com/in/kathyanusha)  
+🔗 [LinkedIn](www.linkedin.com/in/kathy-anusha-felix-586977218)  
 💻 [GitHub](https://github.com/kathyanusha05465)  
-📧 [Email](mailto:kathyanusha@example.com)
+📧 [Email](mailto:kathyanusha05465@gmail.com)
 
 ---
 
