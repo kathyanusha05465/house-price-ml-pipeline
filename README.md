@@ -1,16 +1,31 @@
+---
+title: "House Price Prediction — End-to-End ML Pipeline"
+author: "Kathy Anusha Felix"
+description: "A complete ML pipeline for house price prediction using Random Forest, KNN, and Decision Tree models."
+license: "MIT"
+tags: ["machine learning", "data science", "real estate", "pandasAI", "regression"]
+date: "2025-10-13"
+---
+
 # 🏡 House Price Prediction — End-to-End ML Pipeline
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kathyanusha05465/house-price-ml-pipeline/blob/main/Notebooks/01_data_cleaning_and_models.ipynb)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange.svg)](https://scikit-learn.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 > **Predicting house price per unit area** using **Linear Regression, Random Forest, KNN, and Decision Tree** models.  
-> A complete, reproducible pipeline demonstrating **data preprocessing, model tuning, and evaluation metrics (RMSE, MAE, MAPE, R²)** — built with **Python, scikit-learn, and matplotlib**.
+> Built end-to-end with **Python, scikit-learn, and matplotlib**.  
+> Demonstrates **data preprocessing, model tuning, evaluation metrics (RMSE, MAE, MAPE, R²)**, and visualization.
 
 ---
 
 ## 🎯 Project Overview
 
-This end-to-end machine learning project predicts real estate prices based on housing features such as age, location coordinates, and proximity to MRT stations.  
-The pipeline includes **data cleaning, outlier handling, feature selection, and model comparison** to determine the most accurate predictor.
+This project predicts real estate prices based on features such as **house age, location coordinates, and proximity to MRT stations**.  
+The pipeline covers **data cleaning, outlier handling, feature selection, and model comparison** to identify the most accurate predictor.
 
-**Best Model:** Random Forest (lowest RMSE & MAE).
+**🏆 Best Model:** Random Forest (lowest RMSE & MAE).
 
 ---
 
@@ -22,34 +37,29 @@ The pipeline includes **data cleaning, outlier handling, feature selection, and 
 | **02_data_preparation_pandasAI.ipynb** | ⚠️ Experimental PandasAI-assisted data preparation (requires OpenAI API key) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kathyanusha05465/house-price-ml-pipeline/blob/main/Notebooks/02_data_preparation_pandasAI.ipynb) |
 | **03_decision_tree_pandasAI.ipynb** | ⚠️ AI-assisted Decision Tree modeling (requires OpenAI API key) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kathyanusha05465/house-price-ml-pipeline/blob/main/Notebooks/03_decision_tree_pandasAI.ipynb) |
 
-> 💡 **Note:** Only the first notebook (`01_data_cleaning_and_models.ipynb`) runs fully in Colab.  
-> The other two are provided for reference (AI-assisted workflows using PandasAI).
+> 💡 **Note:** Only `01_data_cleaning_and_models.ipynb` runs fully in Colab.  
+> The other two are included for reference (AI-assisted workflows using PandasAI).
 
 ---
 
 ## 🔍 Key Highlights
 
 - **Preprocessing:** Outlier removal, percentile capping, column normalization, feature engineering  
-- **Models Implemented:** Linear Regression, Random Forest, KNN, Decision Tree  
-- **Hyperparameter Tuning:** GridSearchCV for Random Forest and KNN  
-- **Evaluation Metrics:** RMSE, MAE, MAPE, R²  
-- **Visualization Outputs:**
-  - Correlation Heatmap  
-  - Feature Importance Plot  
-  - Decision Tree Visualization  
-  - Actual vs Predicted Scatterplots  
-  - Residuals Distribution  
+- **Models:** Linear Regression, Random Forest, KNN, Decision Tree  
+- **Tuning:** GridSearchCV for Random Forest and KNN  
+- **Metrics:** RMSE, MAE, MAPE, R²  
+- **Visuals:** Correlation heatmap, feature importance, decision tree, actual vs predicted, residuals  
 
 ---
 
 ## 🧠 Model Performance
 
-| Model | RMSE ($) | MAE ($) | MAPE (%) | R² | Notes |
-|-------|-----------|---------|-----------|----|-------|
-| Linear Regression | 7.6140 | 5.8800 | 16.60 | 0.89 | Baseline model |
-| **Random Forest** | **5.7360** | **4.4204** | **12.90** | **0.93** | ✅ Best performance |
-| KNN | 6.9516 | 5.5362 | 16.27 | 0.90 | Tuned via GridSearchCV |
-| Decision Tree | 7.5989 | 5.6497 | 10.00 | 0.88 | Interpretable but less accurate |
+| Model | RMSE | MAE | MAPE (%) | R² | Notes |
+|-------|------|-----|-----------|----|-------|
+| Linear Regression | 7.614 | 5.880 | 16.6 | 0.89 | Baseline model |
+| **Random Forest** | **5.736** | **4.420** | **12.9** | **0.93** | ✅ Best performer |
+| KNN | 6.951 | 5.536 | 16.2 | 0.90 | Tuned via GridSearchCV |
+| Decision Tree | 7.598 | 5.649 | 10.0 | 0.88 | Interpretable but less accurate |
 
 ---
 
@@ -57,13 +67,13 @@ The pipeline includes **data cleaning, outlier handling, feature selection, and 
 
 | Visualization | Description |
 |----------------|--------------|
-| **Correlation Heatmap** | Relationships among numerical features |
-| **Feature Importance Plot** | Shows key drivers of price in the Random Forest model |
-| **Decision Tree Visualization** | Displays interpretable decision tree structure |
-| **Actual vs Predicted Scatterplots** | Compare predicted vs actual house prices |
-| **Residuals Distribution** | Shows model fit and bias patterns |
+| Correlation Heatmap | Relationship among numeric variables |
+| Feature Importance | Top drivers of house price |
+| Decision Tree | Interpretable tree structure |
+| Actual vs Predicted | Model fit visualization |
+| Residual Distribution | Error distribution after prediction |
 
-_All plots are saved in the_ **`Reports/`** _folder._
+_All visuals are saved in the `Reports/` folder._
 
 ---
 
@@ -73,30 +83,58 @@ _All plots are saved in the_ **`Reports/`** _folder._
 |--------------|-------------|
 | `Data/` | Raw dataset (`real_estate.csv`) |
 | `Notebooks/` | Source notebooks (EDA, preprocessing, modeling, PandasAI) |
-| `Reports/` | Visualizations and model comparison charts |
-| `References/` | Project slides and final report |
+| `Reports/` | Visualizations and model outputs |
+| `References/` | Slides and final report |
 | `Requirements.txt` | Python dependencies |
 | `README.md` | This documentation |
+| `LICENSE` | [MIT License](LICENSE) |
 
 ---
 
 ## ⚙️ How to Reproduce (Locally)
 
-> You don’t need to run anything to see the results — everything is visualized above.  
-> But if you want to reproduce locally:
-
 ```bash
-# 1️⃣ Clone the repository
+# Clone the repository
 git clone https://github.com/kathyanusha05465/house-price-ml-pipeline.git
 cd house-price-ml-pipeline
 
-# 2️⃣ (Optional) Create and activate a virtual environment
+# (Optional) Create and activate a virtual environment
 python -m venv venv
 source venv/bin/activate       # macOS/Linux
 venv\Scripts\activate          # Windows
 
-# 3️⃣ Install dependencies
+# Install dependencies
 pip install -r Requirements.txt
 
-# 4️⃣ Run the main notebook
+# Run the main notebook
 jupyter notebook Notebooks/01_data_cleaning_and_models.ipynb
+
+```
+---
+
+## 👩‍💻 Author
+
+**Kathy Anusha Felix**  
+🎓 Data Analyst & ML Enthusiast  
+📍 Humber College, Toronto, Canada  
+🔗 [LinkedIn](https://www.linkedin.com/in/kathyanusha)  
+💻 [GitHub](https://github.com/kathyanusha05465)  
+📧 [Email](mailto:kathyanusha@example.com)
+
+---
+
+## 🌟 Summary
+
+This repository demonstrates a **complete end-to-end ML pipeline**, including:
+
+- Real-world data cleaning and feature engineering  
+- Multiple regression models with comparison  
+- Visual storytelling and documentation  
+- Optional AI-assisted PandasAI exploration  
+
+> 🏆 **Final Verdict:** Random Forest achieved the best predictive accuracy and interpretability balance.
+
+---
+
+## 🪪 License  
+Licensed under the [MIT License](LICENSE).
