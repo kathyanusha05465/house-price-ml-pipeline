@@ -1,4 +1,4 @@
-# 🏡 House Price Prediction — End-to-End ML Pipeline
+# 🏡 House Price Prediction: End-to-End ML Pipeline
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kathyanusha05465/house-price-ml-pipeline/blob/main/Notebooks/01_data_cleaning_and_models.ipynb)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
