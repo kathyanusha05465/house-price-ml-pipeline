@@ -1,12 +1,3 @@
----
-title: "House Price Prediction — End-to-End ML Pipeline"
-author: "Kathy Anusha Felix"
-description: "A complete ML pipeline for house price prediction using Random Forest, KNN, and Decision Tree models."
-license: "MIT"
-tags: ["machine learning", "data science", "real estate", "pandasAI", "regression"]
-date: "2025-10-13"
----
-
 # 🏡 House Price Prediction — End-to-End ML Pipeline
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kathyanusha05465/house-price-ml-pipeline/blob/main/Notebooks/01_data_cleaning_and_models.ipynb)
